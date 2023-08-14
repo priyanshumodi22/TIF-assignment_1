@@ -1,0 +1,108 @@
+/* Carousel.css */
+.CardStyle {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  background-color: #fff;
+  padding-bottom: 30px;
+}
+
+.CardImageStyle {
+  margin-top: 10px;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.CardImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.CardStyleTitile {
+  color: var(--primary, #0e2368);
+  font-family: Poppins;
+  font-size: 1.3125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.6875rem;
+  text-align: left;
+}
+
+.CardStyleDesciption {
+  color: var(--body, #444957);
+  font-family: Open Sans;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.6875rem; /* 180% */
+  letter-spacing: -0.01875rem;
+}
+.CardCarouselBox {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+.CarouselSection {
+  margin-top: 8rem;
+  margin-left: 6vw;
+  margin-right: 6vw;
+}
+.CarouselSectionTitile {
+  margin-left: 4rem;
+  margin-bottom: 2.56rem;
+  color: var(--primary, #0e2368);
+  font-family: Source Sans Pro;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2.625rem; /* 75% */
+  letter-spacing: 0.14rem;
+}
+.carouselButtonDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.88rem;
+  margin-top: 30px;
+}
+.carouselButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  border-radius: 6px;
+}
+
+@media (max-width: 768px) {
+  .CardStyle {
+    align-items: center;
+  }
+  .CardCarouselBox {
+    grid-template-columns: 1fr; /* Display cards in a column in mobile */
+    align-items: center;
+    gap: 32px; /* Center items vertically in mobile */
+  }
+  .CarouselSection {
+    margin-top: 5rem;
+    margin-left: 0vw;
+    margin-right: 0vw;
+  }
+  .CarouselSectionTitile {
+    text-align: center;
+    margin-left: 0;
+  }
+  .CardStyleDesciption {
+    text-align: center;
+  }
+}

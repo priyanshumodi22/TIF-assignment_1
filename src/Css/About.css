@@ -1,0 +1,54 @@
+.AboutSection {
+  margin-top: 11rem;
+  background: linear-gradient(
+    90deg,
+    rgba(30, 42, 93, 0.04) 0%,
+    rgba(48, 62, 130, 0.04) 55.51%,
+    rgba(60, 80, 157, 0.04) 100%
+  );
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  gap: 12vw;
+}
+.AboutSectionImageDiv {
+  margin-left: 12vw;
+}
+.AboutSectionText {
+  margin-right: 12vw;
+}
+.AboutSectionTitle {
+  color: var(--primary, #0e2368);
+  font-family: "poppins";
+  font-size: 2.8125rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.6875rem;
+}
+.AboutSectionP {
+  color: var(--body, #444957);
+  font-family: Open Sans;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.6875rem;
+}
+
+@media (max-width: 768px) {
+  .AboutSectionImageDiv {
+    display: none;
+  }
+  .AboutSectionText {
+    text-align: center;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+    margin-right: 0;
+  }
+  .AboutSectionP {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}

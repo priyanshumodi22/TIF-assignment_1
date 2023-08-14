@@ -1,0 +1,143 @@
+.HeroSectionDiv {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 16vw;
+  width: 100%;
+  position: relative;
+}
+.HeroSectionImageDiv {
+  order: 2;
+}
+
+.HeroSectionSvg {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.HeroSectionSvgButton {
+  position: absolute;
+  top: 2rem;
+  right: 1.5rem;
+}
+.HeroSectionTextDivImage {
+  position: absolute;
+  top: 2rem;
+}
+.HeroSectionTextDiv {
+  margin-left: 6.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+}
+
+.HeroSectionTitle {
+  font-family: Source Sans Pro;
+  font-size: 3.3rem;
+  font-style: normal;
+  font-weight: 700;
+  color: var(--primary, #0e2368);
+  line-height: 4.3125rem;
+}
+.HeroSectionP {
+  color: var(--body, #444957);
+  font-family: Open Sans;
+  font-size: 1.02781rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.713rem;
+  margin-bottom: 3rem;
+}
+.HeroSectionTitleDiv {
+  margin: 0 auto;
+}
+
+@media (max-width: 1300px) {
+  .HeroSectionImage {
+    width: 43rem;
+    height: 48.4375rem;
+  }
+
+  .custom-svg {
+    width: 45rem;
+    height: 50.4375rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .HeroSectionImage {
+    width: 41rem;
+    height: 46.4375rem;
+  }
+
+  .custom-svg {
+    width: 43rem;
+    height: 48.4375rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .HeroSectionDiv {
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    gap: 4.71rem;
+  }
+
+  .HeroSectionImageDiv {
+    width: 100%;
+    order: -1;
+  }
+  .HeroSectionImage {
+    width: 100%;
+    height: 25.85738rem;
+  }
+
+  .custom-svg {
+    /* Set the desired height and width for the SVG in mobile view */
+    width: 100%;
+    height: 26.625rem; /* Adjust this value as needed */
+  }
+  .HeroSectionSvg {
+    right: 0;
+    top: 0;
+  }
+
+  .HeroSectionTextDiv {
+    margin-left: 0;
+  }
+  .HeroSectionTextDivImage {
+    display: none;
+  }
+  .HeroSectionTitleDiv {
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+  }
+  .HeroSectionTitle {
+    margin-left: 2.88rem;
+    margin-right: 2.88rem;
+  }
+  .HeroSectionP {
+    margin-left: 2.88rem;
+    margin-right: 2.88rem;
+  }
+}
+
+@media (max-width: 410px) {
+  .custom-svg {
+    /* Set the desired height and width for the SVG in mobile view */
+    width: 100%;
+    height: 24.625rem; /* Adjust this value as needed */
+  }
+  .HeroSectionImage {
+    width: 100%;
+    height: 23.85738rem;
+  }
+  .HeroSectionSvgButton {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+}
